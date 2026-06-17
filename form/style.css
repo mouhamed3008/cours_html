@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #0f377b;
+  --secondary-color: #ffd100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+form {
+  background: white;
+  padding: 5rem;
+  border-radius: 10px;
+}
