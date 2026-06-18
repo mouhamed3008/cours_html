@@ -1,27 +1,97 @@
 :root {
   --primary-color: #0f377b;
   --secondary-color: #ffd100;
+  --my-gray: #888;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--primary-color);
-}
-
-.container {
+.page {
   display: flex;
   align-items: center;
-  height: 100vh;
   justify-content: center;
+  min-height: 400px;
+  background: var(--primary-color);
+  border-radius: 12px;
+  padding: 2rem;
 }
 
-form {
+.card {
   background: white;
-  padding: 5rem;
+  border-radius: 14px;
+  padding: 2.5rem 2.5rem 2rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  background: var(--secondary-color);
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: 0 0 4px;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--my-gray);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--my-gray);
+  letter-spacing: 0.3px;
+}
+
+.inp-wrap {
+  position: relative;
+}
+
+.inp-wrap i {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px 0 36px;
+  border-radius: 8px;
+  border: 1px solid#ddd;
+  font-size: 14px;
+  color: #222;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(15, 55, 123, 0.08);
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
