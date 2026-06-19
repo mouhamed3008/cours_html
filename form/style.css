@@ -4,14 +4,19 @@
   --my-gray: #888;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .page {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 400px;
   background: var(--primary-color);
-  border-radius: 12px;
   padding: 2rem;
+  height: 100vh;
 }
 
 .card {
@@ -63,7 +68,7 @@ label {
   position: relative;
 }
 
-.inp-wrap i {
+.inp-wrap > i {
   position: absolute;
   left: 11px;
   top: 50%;
@@ -85,8 +90,18 @@ input {
 }
 
 input:focus {
-  border: 1px solid var(--primary-color);
+  border: 1px dashed var(--primary-color);
   box-shadow: 0 0 0 3px rgba(15, 55, 123, 0.08);
+}
+
+.eye-btn {
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  background: none;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
 }
 
 .remember {
@@ -94,4 +109,49 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.25rem;
+}
+
+.rem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.rem input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--primary-color);
+  padding: 0;
+  cursor: pointer;
+}
+
+.forgot {
+  font-size: 12px;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  margin-top: -4px;
+}
+
+.btn {
+  width: 100%;
+  height: 42px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
