@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="logo">
+          <span>TaskFlow</span>
+        </div>
+
+        <nav class="nav-menu">
+          <a href="" class="nav-item active">
+            <span><i class="fa-solid fa-house"></i></span>
+            Dashboard
+          </a>
+
+          <a href="" class="nav-item">
+            <span><i class="fa-solid fa-list-check"></i></span>
+            Tasks
+          </a>
+
+          <a href="" class="nav-item">
+            <span><i class="fa-solid fa-calendar"></i></i></span>
+            Calendar
+          </a>
+        </nav>
+      </aside>
+
+
+      <div class="main-content">
+        <header class="top-bar">
+            <div class="search-bar">
+                <input type="text" name="" placeholder="Search tasks..." id="">
+            </div>
+
+            <div class="user-menu">
+                <div class="user-profile">
+                    <img src="images/user.png" alt="">
+                    <span>John DOE</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <div class="welcome-setcion">
+                <h1>Welcome back, John DOE</h1>
+                <p>You have 5 tasks due today.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-folder"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Tasks</h3>
+                        <span>20</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                    <div class="stat-info">
+                        <h3>Completed</h3>
+                        <span>18</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-rotate"></i></div>
+                    <div class="stat-info">
+                        <h3>In progress</h3>
+                        <span>05</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-alarm-clock"></i></div>
+                    <div class="stat-info">
+                        <h3>Pending</h3>
+                        <span>02</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="task-section">
+                <div class="section-header">
+                    <h2>Today's Tasks</h2>
+                    <button class="add-task-btn"><i class="fa-solid fa-plus"></i> add Task</button>
+                </div>
+
+
+                <div class="task-list">
+                    <div class="task-item">
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                        </label>
+                        <div class="task-content">
+                            <h3>Design team meeting</h3>
+                            <p>Discuss new project timeline </p>
+                        </div>
+
+                        <div class="task-meta">
+                            <span class="task-priority">High</span>
+                            <span class="task-time">10:00AM</span>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                        </label>
+                        <div class="task-content">
+                            <h3>Design team meeting</h3>
+                            <p>Discuss new project timeline </p>
+                        </div>
+
+                        <div class="task-meta">
+                            <span class="task-priority">Low</span>
+                            <span class="task-time">10:00AM</span>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                        </label>
+                        <div class="task-content">
+                            <h3>Design team meeting</h3>
+                            <p>Discuss new project timeline </p>
+                        </div>
+
+                        <div class="task-meta">
+                            <span class="task-priority">Medium</span>
+                            <span class="task-time">10:00AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
