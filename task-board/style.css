@@ -217,3 +217,35 @@ body {
   color: var(--text-secondary);
   font-size: 0.75rem;
 }
+
+.task-priority.high {
+  background: #fef2f2;
+  color: red;
+}
+
+.task-priority.medium {
+  background: #fffbeb;
+  color: yellowgreen;
+}
+
+.task-priority.low {
+  background: #f0fdf4;
+  color: cyan;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
